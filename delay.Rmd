@@ -140,7 +140,7 @@ The meaning of the columns in the above dataframe is as follows:
 
 Notice that the last 3 columns are identically equal to zero/COELESCE, since by definition this file only contains systems that satisfy these equalities; therefore these columns are useless and we can safely discard them.
 
-```{python}
+```{python include = FALSE}
 # to confirm these columns are constant:
 print((df.sep == 0.0).all())
 print((df.sep == 0.0).all())
